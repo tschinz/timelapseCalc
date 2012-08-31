@@ -3,6 +3,8 @@
 
 The goal is to facilitate the calculation of a Timelapse video parameters. Its a simple GUI where you can enter 3 of the wished parameters and all other values will be automatically calculated.
 
+![TLCP Screenshot](http://zawiki.dyndns.org/~zas/zawiki/lib/exe/fetch.php/tschinz:multimedia:pictures:timelapse:screenshot_timelapsecalc.png)
+
 Required Module
 ---
 To Launch the Program you need to have installed Python 2.7 and certain modules.
