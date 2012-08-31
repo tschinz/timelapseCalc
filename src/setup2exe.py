@@ -27,7 +27,7 @@ __date__   = "15.08.2011"
 # Import modules
 #
 from distutils.core import setup
-import py2exe
+import py2exe, sys
 
 ################################################################################
 # Constants
@@ -43,26 +43,28 @@ dll_excludes = ['libgdk-win32-2.0-0.dll', 'libgobject-2.0-0.dll', 'tcl84.dll',
 ################################################################################
 # Py2exe setup
 #
+sys.argv.append('py2exe')
+
 setup(
     name = 'TimeLapseCalc',
     version = '1.0',
     description = 'Time Lapse Video Parameter Calculator',
     author = 'Zahno Silvan',
     options = {"py2exe": {"compressed": 2,
-                          "optimize": 2,
+                          "optimize": 0,
                           "includes": includes,
                           "excludes": excludes,
                           "packages": packages,
                           "dll_excludes": dll_excludes,
                           "bundle_files": 3,
-                          "dist_dir": "dist",
+                          "dist_dir": "bin",
                           "xref": False,
                           "skip_archive": False,
                           "ascii": False,
                           "custom_boot_script": '',
                          }
               },
-    windows = [{"script": 'gui.py'}],
+    windows = ['gui.pyw'],
     data_files=[("icons",
                  ["icons/back.png", 
                   "icons/exit.png",
@@ -70,5 +72,5 @@ setup(
                   "icons/help.png",
                   "icons/reset.png",
                   "icons/run.png",
-                  "icons/zas.png",])]
+                  "icons/zas.png"])]
     )
