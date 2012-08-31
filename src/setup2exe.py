@@ -64,7 +64,9 @@ setup(
                           "custom_boot_script": '',
                          }
               },
-    windows = ['gui.pyw'],
+    windows = [{ "script": 'gui.pyw',
+                 "icon_resources" : [(0, "icons/zas.ico")]
+              }],
     data_files=[("icons",
                  ["icons/back.png", 
                   "icons/exit.png",
@@ -72,5 +74,6 @@ setup(
                   "icons/help.png",
                   "icons/reset.png",
                   "icons/run.png",
+                  "icons/zas.ico",
                   "icons/zas.png"])]
     )
