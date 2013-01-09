@@ -1,9 +1,9 @@
-[TimelapseCalc](http://zawiki.dyndns.org/~zas/zawiki/doku.php/tschinz:pic_timelapse) - Timelapse Video Parameter Calculator
+[TimelapseCalc](http://zawiki.dyndns.org/doku.php/tschinz:pic_timelapse) - Timelapse Video Parameter Calculator
 ================================
 
 The goal is to facilitate the calculation of a Timelapse video parameters. Its a simple GUI where you can enter 3 of the wished parameters and all other values will be automatically calculated.
 
-![TLCP Screenshot](http://zawiki.dyndns.org/~zas/zawiki/lib/exe/fetch.php/tschinz:multimedia:pictures:timelapse:screenshot_timelapsecalc.png)
+![TLCP Screenshot](http://zawiki.dyndns.org/lib/exe/fetch.php/tschinz:multimedia:pictures:timelapse:screenshot_timelapsecalc.png)
 
 Required Module
 ---
